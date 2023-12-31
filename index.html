@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/97d53b9f19.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="login-btn">Login</button>
+    <div class="empty" id="empty-error">
+        <strong>Please fill empty fields</strong>
+    </div>
+    <div class="wrapper">
+        <span class="icon-close">
+            <i class="fa-solid fa-x"></i>
+        </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <div id="login-form">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" id="login-email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" id="login-pw" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div id="container" style="width: 100%;">
+                    <button id="login-btn" type="submit" class="btn">Login</button>
+                </div>
+
+                <div class="login-register">
+                    <p>Don't have account? <a href="#" class="register-link">Register</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="form-box register">
+            <h2>Registeration</h2>
+            <div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" id="username" required>
+                    <label for="username">Username</label>
+                </div>
+                
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" id="e-mail" required>
+                    <label for="e-mail">Email</label>
+                </div>
+                
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" id="pw" required>
+                    <label for="pw">Password</label>
+                </div>
+                
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> I agree to the terms & conditions</label>
+                </div>
+                <button id="reg" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have account? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="warning user"  id="uwarn">
+        <strong class="unmatch">Please start with capital letter & don't use spcial characters</strong>
+    </div>
+    <div class="warning mail" id="ewarn">
+        <strong class="unmatch">Please enter valid email</strong>
+    </div>
+    <div class="warning pw" id="pwarn">
+        <strong class="unmatch">Please enter strong password at least 8 digits</strong>
+    </div>
+    <div class="warning" id="existwarn">
+        <strong class="unmatch">Email already exists</strong>
+    </div>
+    <div class="success" id="successf">
+        <strong>Signed up successfully</strong>
+    </div>
+    <div class="login-wrong" id="login-wrong">
+        <strong>E-mail or password might be incorrect</strong>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
+

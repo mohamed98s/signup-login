@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 80px;
+
+}
+.home-page{
+    font-weight: 100 !important;
+}
+.bold{
+    font-weight: 700;
+}
+.rolling{
+    width: 0%;
+    overflow: hidden;
+    border-right: 4px solid black;
+    animation: nameRolling .8s ease-out 1.5s forwards,
+                cursor .1s 2.5s forwards; 
+
+}
+
+@keyframes nameRolling {
+    0% {width: 0%;}
+    25% {width: 25%;}
+
+    50% {width: 50%;}
+
+    75% {width: 75%;}
+
+    100% {width: 100%;}
+}
+@keyframes cursor {
+    from { border-color: black;}
+    to { border-color: transparent;}
+    
+}
