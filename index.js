@@ -197,18 +197,19 @@ function login() {
         var email = emailLogin.value
         var password = pwLogin.value
         for (var i = 0; i < signUpArray.length; i++) {
-            if (signUpArray[i].email.toLowerCase() == email.toLowerCase() && signUpArray[i].password.toLowerCase() == password.toLowerCase()) {
+            if (signUpArray[i].email.toLowerCase() == email.toLowerCase() && signUpArray[i].password == password) {
                 localStorage.setItem('sessionUsername', signUpArray[i].name)
 
 
                 console.log('sfasndfsdas')
                 
-                var newBtn = '<a href="home/home.html"><button id="login-btn" type="submit" class="btn">Login</button></a>'
-                loginBtn.remove();
-                container.innerHTML =newBtn
+                // var newBtn = '<a href="home/home.html"><button id="login-btn" type="submit" class="btn">Login</button></a>'
+                // loginBtn.remove();
+                // container.innerHTML =newBtn
+
+                location.href = 'home/home.html';
 
             } else {
-                console.log('asdasdnl')
                 loginWrong.classList.add('popup');
             }
         }

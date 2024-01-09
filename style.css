@@ -272,6 +272,7 @@ body{
 } */
 
 @keyframes cssAnimation {
+    /* 0% {display: block;} */
     0%   {opacity: 1;}
     50% {opacity: .5;}
     99.99% {opacity: 0;}

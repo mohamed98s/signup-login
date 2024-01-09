@@ -12,7 +12,7 @@
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 80px;
-
+    position: relative;
 }
 .home-page{
     font-weight: 100 !important;
@@ -43,4 +43,20 @@
     from { border-color: black;}
     to { border-color: transparent;}
     
+}
+
+.btn{
+    padding: 20px 35px;
+    background-color: #352eb9;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.3em;
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    text-decoration: none;
 }
